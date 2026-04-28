@@ -1,0 +1,24 @@
+# --- Keil µVision Build Artifacts ---
+Listings/
+Objects/
+DebugConfig/
+RTE/
+*.bak
+*.dep
+*.__i
+*.crf
+*.o
+*.d
+*.axf
+*.htm
+*.build_log.htm
+*.lnp
+*.sct
+*.lst
+*.map
+
+# --- User-Specific Settings ---
+# These store window layouts and local debugger settings
+*.uvguix.*
+*.uvgui.*
+*.uvoptx
