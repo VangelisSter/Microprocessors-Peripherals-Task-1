@@ -394,6 +394,11 @@
               <FileType>2</FileType>
               <FilePath>.\hash_function.s</FilePath>
             </File>
+            <File>
+              <FileName>clearance_level_function.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\clearance_level_function.s</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

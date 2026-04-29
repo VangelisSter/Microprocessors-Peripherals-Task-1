@@ -2,8 +2,11 @@
 
 .p2align 2
 .type hash_function,%function
-//Lookup table for digits 0-9
 
+hash_result: 
+    .word 0 // Memory location to store final result
+
+//Lookup table for digits 0-9
 lookup_table:
     .word 2, 3, 5, 7, 11, 13, 17, 19, 23, 29
 
@@ -17,7 +20,7 @@ hash_function:
 	//r1 is the temp output(hash)
 	//r2 is the current char
 	//r3 is the base address of the LUT
-	//r4 is the temp register for the output of the LUT
+	//r4 is the temp register for the output of the LUT and the store address
 	mov r1, #0
 	ldr r3, =lookup_table
 	hash_loop:
@@ -67,7 +70,10 @@ hash_function:
 				
 	
 	done:
+		// Store the result in the memory
+		ldr r4, =hash_result
+		str r1, [r4]
+		
+		// Move the output to r0
 		mov r0, r1
 		bx lr
-		// Move the output to r0
-	
