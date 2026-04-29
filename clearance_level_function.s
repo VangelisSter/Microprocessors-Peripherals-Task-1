@@ -22,7 +22,7 @@ clearance_level_function:
 			addne r1, r1, #1 //Uses the zero flag to determine whether to increment the counter
 			// Now we shift the hash by one bit so we can check the next bit, which becomes the LSB
 			lsr r0, r0, #1
-			// Ones we have proccesed all the ones, cmp r1, #0 will give 0 and we will branch to calculate_mod
+			// Once we have proccesed all the ones, cmp r1, #0 will give 0 and we will branch to calculate_mod
 			b count_ones_loop
 		
 		
