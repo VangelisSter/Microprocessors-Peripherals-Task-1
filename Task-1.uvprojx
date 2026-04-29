@@ -399,6 +399,11 @@
               <FileType>2</FileType>
               <FilePath>.\clearance_level_function.s</FilePath>
             </File>
+            <File>
+              <FileName>Lucas_sequence.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Lucas_sequence.s</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
