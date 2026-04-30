@@ -53,6 +53,7 @@ hash_function:
 		bgt check_digits
 		bic r2, r2, #32 // This mask converts the ASCII character from lowercase to uppercase
 		add r1, r1, r2 // Add the new ASCII to the hash
+		b hash_loop
 	
 	check_digits:
 		// Now we check for digit

@@ -5,7 +5,7 @@ extern int clearance_level_function(int hash);
 extern int Lucas_sequence_function(int clearance);
 
 int main(void){
-	char pin[] = "A382";
+	char pin[] = "A9b3";
 	
 	int hashed_pin = hash_function(pin);
 	int clearance = clearance_level_function(hashed_pin);
